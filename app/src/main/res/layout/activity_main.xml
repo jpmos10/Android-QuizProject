@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.starwarsquiz.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/player_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:hint="@string/name"
+            android:inputType="textCapWords" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:layout_marginTop="16dp"
+            android:gravity="center"
+            android:text="@string/quizInstructions"
+            android:textAllCaps="true" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Question 1" />
+                <!--<shape xmlns:android="http://schemas.android.com/apk/res/android">-->
+                    <!--<size android:height="2dip"/>-->
+                    <!--<solid android:color="#ffffffff"/>-->
+                <!--</shape>-->
+
+                <TextView
+                    android:id="@+id/question_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="25dp"
+                    android:gravity="center"
+
+                    android:text="The Empire is a member of the United Federation of Planets? "
+                    android:textSize="16sp"/>
+                <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="75dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+                    <RadioButton android:id="@+id/_true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="True"/>
+                        <!--android:onClick="onRadioButtonClicked"-->
+
+                    <RadioButton android:id="@+id/_false"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="False"/>
+                        <!--android:onClick="onRadioButtonClicked"/>-->
+                </RadioGroup>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Question 2" />
+                <!--<shape xmlns:android="http://schemas.android.com/apk/res/android">-->
+                <!--<size android:height="2dip"/>-->
+                <!--<solid android:color="#ffffffff"/>-->
+                <!--</shape>-->
+
+                <TextView
+                    android:id="@+id/question_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="25dp"
+                    android:gravity="center"
+                    android:text="Darth Vadar was?"
+                    android:textSize="16sp"/>
+                  <LinearLayout
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:paddingTop="50dp">
+                      <CheckBox
+                          android:id="@+id/anakin"
+                          android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:layout_marginLeft="16dp"
+                          android:paddingLeft="24dp"
+                          android:text="Anakin Skywalker"
+                          android:textSize="16dp" />
+
+                      <CheckBox
+                      android:id="@+id/android"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_marginLeft="16dp"
+                      android:paddingLeft="24dp"
+                      android:text="an Android"
+                      android:textSize="16dp" />
+
+                      <CheckBox
+                          android:id="@+id/lukesFather"
+                          android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:layout_marginLeft="16dp"
+                          android:paddingLeft="24dp"
+                          android:text="Luke's Father"
+                          android:textSize="16dp" />
+                  </LinearLayout>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+
+
+
+
+
+
+
+
+    </LinearLayout>
+
+</ScrollView>
